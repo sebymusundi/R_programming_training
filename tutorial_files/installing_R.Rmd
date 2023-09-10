@@ -1,0 +1,60 @@
+---
+title: "R and RStudio installation"
+output: html_document
+date: "`r Sys.Date()`"
+author: "Musundi DS"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+
+
+#### **Step 1: Installing R**.
+
+
+The first step in using R programming is installing the program. The installation is dependent on the operating system in use. In this case we showcase how to install R in Windows.
+
+
+R is the basic package that must be installed. Later on we will install Rstudio which is an add-on that makes it easy to use R. 
+**NB: RStudio cannot run without installing R**.
+
+
+The specific link for installing R is shown below.
+<https://cran.rstudio.com/>.
+
+
+
+Please down the R program and follow the prompts associated with installing any program in Windows.
+
+
+#### **Step 2: Installing Rstudio**
+
+
+After R installation is complete, we will proceed to install Rstudio, a graphical add-on that make it easy to use R. Only proceed to this step if you successfully installed R.
+
+
+The link to install the latest version of RStudio is given below.
+<https://download1.rstudio.org/electron/windows/RStudio-2023.06.2-561.exe>
+
+
+
+Similarly, follow the default prompt provided to complete installation of RStudio.
+
+
+#### **Open RStudio** 
+
+After installing R and RStudio, we are now ready to start programming in R. In your windows search section search for "Rstudio" and open it 
+
+
+if you see the interface below, then you have successfully installed R and Rstudio
+
+![Interface](rstudio_session_default.png)
+
+In case of any problem, kindly contact the email below 
+<musundiseby@gmail.com>
+
+
+
