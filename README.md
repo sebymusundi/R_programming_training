@@ -5,10 +5,10 @@ This repository contains the latest files that we are currently using for our R 
 -  Installing R packages 
 -  Basic mathematical operations in RStudio
 -  Data objects in R
--      Vectors
--      Dataframes
--      Lists
--      Arrays
--      Matrices
+-    Vectors
+-    Dataframes
+-    Lists
+-    Arrays
+-    Matrices
 -  Importing and Exporting files in Rstudio
 
