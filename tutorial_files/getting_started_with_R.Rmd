@@ -363,4 +363,63 @@ Learn about `seq` and `rep` functions in R and write the commands that give the 
 -   7 7 7 7 2 2 2 8 1 1 1 1 1
 
 
-```DATA STRUCTURES`` -List, arrays, data frames and matrices
+
+
+##### **Dataframe**
+
+A dataframe is a fundamental data structure in R that allows you to store and manipulate data in a tabular format, similar to a spreadsheet or a database table. Each column in a dataframe can contain different types of data, such as numbers, strings, or factors.
+
+We can create dataframes using different approaches. The first one involves creating a dataframe from vectors. 
+For example, if we have three vectors  of individual names, gender and age as shown below
+
+```
+name<-c("Mary","Lucy","Brian","Jane","Virginia","Seby")
+gender<-c('F','F','M','F','F','M')
+age<-c(12,13,13,14,11,12)
+
+```
+We can create a dataframe by using the function `data.frame` to join the three vectors
+
+```
+dtf1 <- data.frame(name, gender, age)
+
+```
+
+We can also generate a dataframe from scratch using the function  `data.frame` 
+
+``` 
+
+dtf2<-data.frame(Name=c("Mary","Lucy","Brian","Jane","Virginia","Seby"),Score=c(56,78,49,67,34,81))
+
+```
+To view the contents present in a dataframe we use the `View` function 
+
+```
+View(dtf1)
+View(dtf2)
+```
+To check the attributes of a dataframe . i.e to know the number of columns and rows we use `ncol` and `nrow`
+
+```
+# Checking the number of columns 
+ncol(dtf1)
+ncol(dtf2)
+
+# Checking the number of rows
+nrow(dtf1)
+nrow(dtf2)
+
+```
+
+WE use the `str ` function to check for the structure of the dataframe. We have three types of datatypes in R
+logical, numeric and characters. 
+
+```
+str(dtf1)
+str(dtf2)
+
+```
+
+
+
+

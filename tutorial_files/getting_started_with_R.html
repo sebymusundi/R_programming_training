@@ -11,7 +11,7 @@
 
 <meta name="author" content="Musundi DS" />
 
-<meta name="date" content="2023-09-06" />
+<meta name="date" content="2023-09-19" />
 
 <title>Getting Started with R</title>
 
@@ -352,7 +352,7 @@ display: none;
 
 <h1 class="title toc-ignore">Getting Started with R</h1>
 <h4 class="author">Musundi DS</h4>
-<h4 class="date">2023-09-06</h4>
+<h4 class="date">2023-09-19</h4>
 
 </div>
 
@@ -764,8 +764,43 @@ write the commands that give the following output</p>
 <li>1 1 1 1 1 2 2 2 2 3 3 3 4 4 5</li>
 <li>7 7 7 7 2 2 2 8 1 1 1 1 1</li>
 </ul>
-<p>`<code>DATA STRUCTURES</code> -List, arrays, data frames and
-matrices</p>
+</div>
+<div id="dataframe" class="section level5">
+<h5><strong>Dataframe</strong></h5>
+<p>A dataframe is a fundamental data structure in R that allows you to
+store and manipulate data in a tabular format, similar to a spreadsheet
+or a database table. Each column in a dataframe can contain different
+types of data, such as numbers, strings, or factors.</p>
+<p>We can create dataframes using different approaches. The first one
+involves creating a dataframe from vectors. For example, if we have
+three vectors of individual names, gender and age as shown below</p>
+<pre><code>name&lt;-c(&quot;Mary&quot;,&quot;Lucy&quot;,&quot;Brian&quot;,&quot;Jane&quot;,&quot;Virginia&quot;,&quot;Seby&quot;)
+gender&lt;-c(&#39;F&#39;,&#39;F&#39;,&#39;M&#39;,&#39;F&#39;,&#39;F&#39;,&#39;M&#39;)
+age&lt;-c(12,13,13,14,11,12)
+</code></pre>
+<p>We can create a dataframe by using the function
+<code>data.frame</code> to join the three vectors</p>
+<pre><code>dtf1 &lt;- data.frame(name, gender, age)
+</code></pre>
+<p>We can also generate a dataframe from scratch using the function
+<code>data.frame</code></p>
+<pre><code>
+dtf2&lt;-data.frame(Name=c(&quot;Mary&quot;,&quot;Lucy&quot;,&quot;Brian&quot;,&quot;Jane&quot;,&quot;Virginia&quot;,&quot;Seby&quot;),Score=c(56,78,49,67,34,81))
+</code></pre>
+<p>To view the contents present in a dataframe we use the
+<code>View</code> function</p>
+<pre><code>View(dtf1)
+View(dtf2)</code></pre>
+<p>To check the attributes of a dataframe . i.e to know the number of
+columns and rows we use <code>ncol</code> and <code>nrow</code></p>
+<pre><code># Checking the number of columns 
+ncol(dtf1)
+ncol(dtf2)
+
+# Checking the number of rows
+nrow(dtf1)
+nrow(dtf2)
+</code></pre>
 </div>
 
 
